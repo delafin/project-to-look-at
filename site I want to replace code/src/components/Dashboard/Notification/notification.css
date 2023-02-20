@@ -1,0 +1,88 @@
+.notify-container{
+    padding: 20px 120px;
+    min-height: 100vh;
+}
+
+.notify .title h1{
+    color: #fff;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.notify .notifications-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #262730;
+    padding: 100px 0;
+    margin-top: 15px;
+    height: 80vh;
+    border-radius: 5px;
+}
+
+.notify .notifications-container .notifications{
+    text-align: center;
+}
+
+.notify .notifications-container .notifications h2{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 15px 0;
+}
+
+.notify .notifications-container .notifications p{
+    color: #ddd;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.notify .notifications-container .notifications img{
+    width: 80px;
+}
+
+.new-notification .details{
+    border: 1px solid #262730;
+    background-color: #262830;
+    padding: 20px 30px;
+    margin: 20px 0;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.new-notification .notification-content h4{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Work' sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.new-notification .notification-content h5{
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Work' sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.new-notification .spot{
+    height: 10px;
+    width: 10px;
+    background-color: #3367d6;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+@media all and (max-width: 480px){
+    .notify-container{
+        padding: 20px 20px;
+    }
+}

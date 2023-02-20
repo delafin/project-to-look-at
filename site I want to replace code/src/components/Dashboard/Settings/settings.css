@@ -1,0 +1,325 @@
+.settings{
+    display: flex;
+    background-color: #292B3A;
+    width: 100%;
+}
+
+.settings-page{
+    padding: 20px 120px;
+    width: 100%;
+}
+
+.settings-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.settings-title h2{
+    color: #fff;
+    font-weight: 600;
+}
+
+.settings-options ul{
+    padding: 20px 0;
+    display: flex;
+    padding-bottom: 0;
+    border-bottom: 1px solid gray;
+}
+
+.settings-options ul li{
+    list-style: none;
+    margin: 0 15px;
+    padding-bottom: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    display: flex;
+}
+
+.settings-options ul li:hover{
+    border-bottom: 3px solid #3367d6;
+}
+
+.settings-options ul li h5{
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-left: 5px;
+}
+
+.email-setting{
+    margin: 15px 0;
+}
+
+.account-settings, .email-setting{
+    border: 1px solid #262730;
+    border-radius: 5px;
+}
+
+.account-settings h3, .email-setting h3, .add-phone{
+    color: #fff;
+    font-size: 1rem;
+    border-bottom: 1px solid #262730;
+    padding: 15px 25px;
+    font-weight: 500;
+    background-color: #31333f;
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+
+.account-settings form{
+    background-color: #262730;
+}
+
+.account-settings .name{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+}
+
+.account-settings .name .first-name, .name .last-name{
+    display: flex;
+    flex-direction: column;
+}
+
+.account-settings form .name input[type='text']{
+    background-color: transparent;
+    width: 300px;
+    padding: 5px 15px;
+    outline: none;
+    border: 1px solid #292B3A;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.account-settings form .name label{
+    color: #fff;
+    padding-bottom: 5px;
+}
+
+.account-settings form .save-btn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.account-settings form .save-btn input[type='submit']{
+    margin: 20px 25px;
+    padding: 3px 18px;
+    border: 1px solid #3367d6;
+    background-color: #3367d6;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.email-setting .view-emails{
+    display: flex;
+    padding: 15px 25px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #262730;
+}
+
+.email-setting .view-emails button, .add-phone button{
+    padding: 3px 18px;
+    border: 1px solid #3367d6;
+    background-color: #3367d6;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.view-emails h5{
+    color: #ddd;
+    font-size: .9rem;
+    font-weight: 300;
+}
+
+.view-emails h4{
+    color: #fff;
+    font-size: .9rem;
+    font-weight: 300;
+    padding: 2px 8px;
+    background-color: #20B2AA;
+    border-radius: 3px;
+}
+
+.add-phone{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-phone h3{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.no-phone{
+    background-color: #262730;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.no-phone h4{
+    color: #fff;
+    font-size: 1rem;
+}
+
+.no-phone p{
+    color: #ddd;
+    font-size: 1rem;
+}
+
+@media all and (max-width: 480px){
+    .settings-page{
+        padding: 20px 20px;
+    }
+    .account-settings .name{
+        display: block;
+    }
+    .account-settings .name .last-name{
+        margin: 20px 0;
+    }
+    .settings-options ul li h5{
+        font-size: .9rem;
+    }
+}
+
+@media all and (min-width: 481px) and (max-width: 768px){
+    .settings-page{
+        padding: 20px 30px;
+    }
+    .account-settings form .name input[type='text']{
+        width: 250px;
+    }
+}
+
+/* Phone modal */
+
+.phone-settings-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-settings-container .phone-settings{
+    border: 1px solid #262730;
+    background-color: #31333f;
+    border-radius: 5px;
+    width: 400px;
+    margin-top: 70px;
+}
+
+.phone-settings .phone-settings-title{
+    border-bottom: 1px solid #31333f;
+    background-color: #262730;
+    padding: 15px 25px;
+}
+
+.phone-settings .phone-settings-title h1{
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.phone-settings form{
+    padding: 20px 25px;
+}
+
+.phone-settings form h2, .phone-settings form h3{
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.phone-settings form h4{
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #3367d6;
+    text-align: center;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.phone-settings form .country, .phone-settings form .number{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.phone-settings form .number input[type="number"], .country input[type="text"], .country input[type="email"]{
+    width: 300px;
+    border-radius: 5px;
+    padding: 6px 12px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #ddd;
+}
+
+.phone-settings form .country .form-select{
+    background-color: transparent;
+    color: #fff;
+    background-image: url(../.././images/down.png);
+    width: 300px;
+    border: 1px solid #ddd;
+}
+
+.phone-settings form .country .form-select option{
+    background-color: #383a47;
+}
+
+.phone-settings form .country label, .phone-settings form .number label{
+    color: #fff;
+    font-size: 16px;
+}
+
+.phone-settings form .but{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-top: 30px;
+    align-items: center;
+}
+
+.phone-settings form .but button{
+    color: #fff;
+    padding: 4px 13px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.phone-settings form .but .but1{
+    background-color: transparent;
+    border: 2px solid #262730;
+}
+
+.phone-settings form .but .but2{
+    background-color: #20B2AA;
+    border: 1px solid #20B2AA;
+}
+
+.phone-settings form .otp{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-settings form .otp input[type="text"]{
+    border-radius: 3px;
+    background-color: #292B3A;
+    padding: 8px 2px;
+    color: #fff;
+    outline: none;
+    border: 1px solid #292B3A;
+    width: 40px;
+    margin: 0 10px;
+    text-align: center;
+}

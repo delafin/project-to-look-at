@@ -1,0 +1,82 @@
+@media all and (max-width: 480px){
+    
+    .phone-chat-container{
+        width: 100%;
+        height: 90vh;
+        position: fixed;
+    }
+    
+    .phone-chat-container .phone-chat-box{
+        height: 100vh;
+    }
+    
+    .phone-chat-box .phone-msg-header{
+        padding: 10px 40px;
+        background-color: #3367d6;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    
+    .phone-chat-box .phone-msg-header h1{
+        color: #fff;
+        font-size: 1.5rem;
+    }
+    
+    .phone-chat-box .chat-panel{
+        height: 78vh;
+        width: 100%;
+        min-height: 78vh;
+    }
+    
+    .phone-chat-box .chat-panel .chat-bubble{
+        max-width: 35%;
+        padding: 5px 10px;
+        overflow-wrap: break-word;
+        word-break: break-word;
+    }
+    
+    .phone-chat-box .chat-panel .chat-bubble--blue{
+        right: 0;
+        color: #fff;
+        left: 45%;
+    }
+
+    .chat-panel .chat-bubble .time{
+        padding-top: 0;
+    }
+
+    .chat-panel .chat-bubble .time p{
+        margin-bottom: 0;
+    }
+    
+    .phone-chat-box .phone-msg-input{
+        position: fixed;
+        border-top: 2px solid #ddd;
+        padding: 5px 10px;
+        width: 87%;
+    }
+    
+    .phone-chat-box .phone-msg-input .chat-box-input{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        outline: none;
+        padding: 10px 14px;
+        border: 1px solid #262838;
+        background-color: #404355;
+        border-radius: 20px;
+        color: #fff;
+    }
+    
+    .phone-chat-box .phone-msg-input .chat-box-input .i{
+        cursor: pointer;
+    }
+    
+    .phone-chat-box .phone-msg-input .chat-box-input input{
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: #fff;
+        width: 100%;
+    }
+}

@@ -1,0 +1,350 @@
+.login__container{
+    width: 100%;
+    height: 100vh;
+    background-color: #292B3A;
+    display: flex;
+}
+
+.login-form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    background-color: #292B3A;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.login-form form h2{
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+.login-form form input[type='email'], form input[type='password']{
+    padding: 6px 14px;
+    margin: 12px 0;
+    border: 1px solid #fff;
+    background-color: #292B3A;
+    color: white;
+    border-radius: 4px;
+}
+
+.forgot-password{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 18px;
+}
+
+.forgot-password .check-btn{
+    display: flex;
+    align-items: baseline;
+}
+
+.forgot-password p{
+    color: #2979FF;
+    text-decoration: underline;
+    cursor: pointer;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-right: 0;
+}
+
+.login-form form label{
+    color: #ddd;
+    padding-left: 5px;
+    font-size: .9rem;
+}
+
+.login-form form input[type='checkbox']{
+    background-color: #292B3A;
+    width: 18px;
+    height: 17px;
+    border: 1px solid #fff;
+}
+
+.login-form form input[type='submit']{
+    padding: 6px 14px;
+    background-color: #20B2AA;
+    color: #fff;
+    border-radius: 4px;
+    border: 1px solid #20B2AA;
+    margin-top: 0;
+}
+
+.line1{
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.line1 h5{
+    color: gray;
+    font-weight: 200;
+    font-size: .9rem;
+    margin: 0 5px;
+}
+
+.line2, .line3{
+    border-bottom: 1px solid gray;
+    width: 100px;
+}
+
+/* google btn */
+
+.google-btn{
+    margin-top: 15px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+
+.google-button {
+  all: unset;
+
+  margin: auto;
+  width: 300px;
+  height: 42px;
+  background-color: #4285f4;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  transition: all 300ms ease-in-out;
+  display: flex;
+  justify-content: space-between;
+
+}  
+
+.google-icon-wrapper {
+    margin: 1px;
+    width: 40px;
+    height: 40px;
+    border-radius: 1px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.google-button-text {
+    display: flex;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    font-family: "Roboto";
+    margin-left: 1em;
+    margin-right: 3em;
+    align-items: center;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.google-button:hover {
+    box-shadow: 0 0 3px 3px rgba(66, 133, 244, 0.3);
+    cursor: pointer;
+}
+
+.google-button:active {
+    background: #3367d6;;
+}
+
+.login-form h4{
+    padding-top: 10px;
+    color: #fff;
+    font-size: .7rem;
+    font-weight: 200;
+    text-align: center;
+    line-height: 20px;
+}
+
+.login-form h4 span{
+    color: #3367d6;
+}
+
+.login-form h3{
+    font-size: .9rem;
+    font-weight: 200;
+    color: #ddd;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.login-form h3 span{
+    color: #2979FF;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* login hero content */
+
+.login-hero{
+    background: url(../../images/background4.jpg) center;
+    background-size: cover;
+    height: 100vh;
+    width: 50%;
+}
+
+.login-hero-content{
+    padding-left: 50px;
+    background-color: #111;
+    opacity: .8;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.login-hero-content .logo{
+    margin-left: 0;
+    height: 10vh;
+    padding-top: 30px;
+}
+
+.login-hero-content .logo img{
+    width: 120px;
+}
+
+.content-container{
+    padding-bottom: 50px;
+}
+
+.content-container h4{
+    color: #ddd;
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.content-container h2{
+    color: white;
+    font-weight: 500;
+}
+
+.verification-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.verification-content .error-box{
+    border: 1px solid #2979FF;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 300px;
+}
+
+.verification-content .error-box h3{
+    font-size: 1rem;
+}
+
+.verification-content h4{
+    color: #ddd;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 15px 0;
+}
+
+.verification-content h5{
+    color: #ddd;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 15px 0;
+}
+
+.verification-content h5 span{
+    font-weight: 600;
+}
+
+.verification-content h3{
+    color: #fff;
+}
+
+.verification-content button{
+    padding: 6px 14px;
+    border: 1px solid #ddd;
+    background-color: transparent;
+    border-radius: 4px;
+    color: white;
+    width: 250px;
+}
+
+.verification-content form{
+    display: flex;
+    flex-direction: column;
+}
+
+.verification-content form input[type="email"], .verification-content form input[type="password"]{
+    padding: 6px 14px;
+    margin: 12px 0;
+    border: 1px solid #fff;
+    background-color: #292B3A;
+    color: white;
+    border-radius: 4px;
+    width: 300px;
+    outline: none;
+}
+
+.verification-content form input[type="submit"]{
+    padding: 6px 14px;
+    background-color: #2979FF;
+    color: #fff;
+    border-radius: 4px;
+    border: 1px solid #2979FF;
+    margin-top: 0;
+    font-weight: 700;
+}
+
+.verification-content form input[type="submit"]:hover{
+    background-color: #3367d6;
+    transition: all .3s;
+}
+
+.change-email{
+    margin-top: 200px;
+}
+
+.change-email h4{
+    font-size: 1rem;
+    color: #ddd;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.change-email h4 span{
+    color: #3367d6;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* responsiveness */
+
+@media all and (max-width: 480px){
+    .login__container{
+        display: block;
+    }
+    .login-hero{
+        display: none;
+    }
+    .login-form{
+        width: 100%;
+        margin-top: 0;
+        padding-top: 50px;
+    }
+    .verification-content{
+        width: 100%;
+        margin-top: 0;
+        padding-top: 80px;
+    }
+}

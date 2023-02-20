@@ -1,0 +1,230 @@
+.myprofile-container{
+    padding: 20px 120px;
+    min-height: 100vh;
+}
+
+.edit-container{
+    padding: 20px 120px;
+}
+
+.myprofile-container .myprofile-title{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.myprofile-container .myprofile-title h1, .edit-container h1{
+    color: #fff;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.myprofile-container .myprofile-title button{
+    padding: 4px 14px;
+    color: #fff;
+    background-color: #3367d6;
+    border: 1px solid #3367d6;
+    border-radius: 3px;
+}
+
+.myprofile-display{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.myprofile-display .myprofile-orders{
+    width: 49%;
+    background-color: #31333f;
+    border-radius: 3px;
+    padding: 20px 20px;
+}
+
+.myprofile-display .myprofile-orders ul{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.myprofile-display .myprofile-orders ul li{
+    list-style: none;
+}
+
+.myprofile-display .myprofile-orders ul .slash{
+    background-color: #686666;
+    height: 80px;
+    width: 1px;
+}
+
+.myprofile-display .myprofile-orders ul li h3{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.myprofile-display .myprofile-orders ul li h5{
+    color: #ddd;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.myprofile-display .thumbnail{
+    display: flex;
+    align-items: center;
+    width: 49%;
+    background-color: #31333f;
+    border-radius: 3px;
+    padding: 20px 20px;
+}
+
+.myprofile-display .thumbnail .i{
+    height: 60px;
+    width: 60px;
+    background-color: #4b4c52;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    margin-right: 20px;
+}
+
+.myprofile-display .myprofile-username h3, .myprofile-username h4{
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+
+.last-orders{
+    background-color: #31333f;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+
+.last-orders h1{
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #686666;
+    padding: 15px 20px;
+}
+
+.last-orders ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid #686666;
+    margin-bottom: 0;
+}
+
+.last-orders ul li{
+    list-style: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.edit{
+    padding: 40px 30px;
+    margin-top: 20px;
+    background-color: #31333f;
+    height: 50vh;
+}
+
+.edit .edit-wrap form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.edit .edit-wrap .username{
+    display: flex;
+    flex-direction: column;
+}
+
+.edit .edit-wrap .username label{
+    color: #ddd;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.edit .edit-wrap input[type="text"]{
+    background: transparent;
+    border: 1px solid #ddd;
+    width: 350px;
+    padding: 4px 13px;
+    color: #ddd;
+    border-radius: 3px;
+}
+
+.edit form .upload{
+    display: flex;
+    align-items: center;
+}
+
+.edit .upload .i{
+    height: 65px;
+    width: 65px;
+    background-color: #4b4c52;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 65px;
+    margin-right: 20px;
+}
+
+.edit .upload .j img, .thumbnail .j img{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.edit .update-btn{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+
+.edit .update-btn button{
+    border: 1px solid #3367d6;
+    background-color: #3367d6;
+    padding: 4px 16px;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.last-orders .all-orders ul{
+    display: flex;
+    background-color: #686666;
+    margin: 0;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+}
+
+.last-orders .all-orders ul li{
+    list-style: none;
+}
+
+@media all and (max-width: 480px){
+    .myprofile-container{
+        padding: 10px 10px;
+    }
+    .edit-container{
+        padding: 10px 10px;
+    }
+    .myprofile-display .myprofile-orders{
+        padding: 10px 10px;
+    }
+    .myprofile-display .myprofile-orders ul{
+        padding-left: 0;
+    }
+    .edit .edit-wrap form{
+        display: flex;
+        flex-direction: column;
+    }
+}

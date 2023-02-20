@@ -1,0 +1,148 @@
+.profile {
+    padding-top: 10px;
+}
+
+.profile .nav {
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+.profile .nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 70px;
+    min-height: 8vh;
+    background-color: skyblue;
+}
+
+.profile .nav ul li {
+    list-style: none;
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 27px;
+}
+
+.profile .nav ul li:hover {
+    width: 120px;
+    background-color: rgb(85, 141, 163);
+    min-height: 8vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transition: all .3s;
+}
+
+.details1 {
+    margin-left: 90px;
+    border-bottom: 1px solid #ddd;
+    margin-right: 50px;
+}
+
+.details1 button {
+    margin-right: 50px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: #1d1d1d;
+    font-weight: 600;
+    font-size: .9rem;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.details1 button:hover {
+    color: skyblue;
+    border-bottom: 2px solid skyblue;
+    transition: all .2s;
+}
+
+/* dashboard */
+
+.order-dashboard{
+    display: flex;
+    background-color: #292B3A;
+    width: 100%;
+    z-index: 2;
+    min-height: 100vh;
+}
+
+.orders-view{
+    padding: 20px 120px;
+    background-color: #292B3A;
+    width: 100%;
+}
+
+.orders-view-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.orders-view-title h2{
+    color: #fff;
+}
+
+.order-status ul{
+    padding: 20px 0;
+    display: flex;
+    padding-bottom: 0;
+    border-bottom: 1px solid gray;
+}
+
+.order-status ul li{
+    list-style: none;
+    margin: 0 15px;
+    padding-bottom: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+}
+
+.order-status ul li:hover{
+    border-bottom: 3px solid #3367d6;
+}
+
+.active-order{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 50px;
+    background-color: #262730;
+    padding: 80px 0;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.active-order img{
+    width: 100px;
+}
+
+.active-order h3{
+    color: #ddd;
+    font-size: 1.2rem;
+    padding: 15px 0;
+}
+
+/* responsive */
+
+@media all and (max-width: 480px){
+    .orders-view{
+        padding: 20px 20px;
+    }
+}
+
+@media all and (min-width: 481px) and (max-width: 768px){
+    .orders-view{
+        padding: 20px 30px;
+    }
+}

@@ -1,0 +1,224 @@
+.pay-form-container {
+    background-color: #262838;
+    height: 100vh;
+    padding: 0 150px;
+}
+
+.proceed{
+    float: right;
+    padding: 15px 0;
+}
+
+.proceed button{
+    color: #ddd;
+    border: 1px solid #383a47;
+    background-color: #383a47;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+
+.proceed button:hover{
+    border: 1px solid #3367d6;
+    background-color: #3367d6;
+    color: #fff;
+}
+
+.pay-form{
+    display: flex;
+    border: 1px solid #383a47;
+    width: 100%;
+}
+
+.pay-form .price {
+    width: 50%;
+    background-color: #292B3A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pay-form .price img{
+    width: 200px;
+}
+
+.card-content{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.pay-form .price h2{
+    font-size: 1.3rem;
+    color: #ddd;
+    font-weight: 600;
+}
+
+.pay-form .price p{
+    font-size: 1rem;
+    color: #ddd;
+    padding-top: 10px;
+}
+
+.pay-form .payment {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+form .card-info{
+    margin-bottom: 10px;
+    padding-top: 30px;
+}
+
+form .card-name, .cvv, .expiry{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+form .email{
+    margin-bottom: 20px;
+}
+
+form .card-info h3, .card-name h3, .email h3, .cvv h3, .expiry h3{
+    font-size: .9rem;
+    color: #fff;
+}
+
+form .expiry .fields{
+    display: flex;
+    align-items: center;
+}
+
+form .expiry .slash{
+    width: 3px;
+    height: 20px;
+    margin: 0 20px;
+    background-color: #fff;
+    transform: rotate(30deg);
+}
+
+form .expiry input[type='text']{
+    width: 154px;
+    font-size: 1rem;
+    padding: 5px 15px;
+    color: #fff;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #383a47;
+    background-color: transparent;
+    margin: 3px;
+}
+
+form .cvv input[type="text"]{
+    width: 360px;
+    font-size: 1rem;
+    padding: 5px 15px;
+    color: #fff;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #383a47;
+    background-color: transparent;
+    margin: 3px;
+}
+
+form .card-info input[type='text'], .card-name input[type='text'], .email input[type='email']{
+    width: 360px;
+    font-size: 1rem;
+    padding: 5px 15px;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #383a47;
+}
+
+form .pay button{
+    width: 360px;
+    text-align: center;
+    border: 1px solid #3367d6;
+    background-color: #3367d6;
+    color: #fff;
+    font-weight: 600;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
+.success{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 40px 90px;
+    color: #fff;
+}
+.success img{
+    width: 50px;
+    position: relative;
+}
+.success h1 {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 20px 20px;
+}
+
+.success p{
+    color: #ddd;
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.success button{
+    margin-top: 20px;
+    padding: 6px 25px;
+    outline: none;
+    border: 1px solid #3367d6;
+    background-color: #3367d6;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+/* responsive */
+
+@media all and (max-width: 480px){
+    .pay-form-container{
+        padding: 20px 20px;
+    }
+    .pay-form{
+        display: block;
+        border: none;
+    }
+    .pay-form .price{
+        display: none;
+    }
+    .pay-form .payment{
+        width: 100%;
+        padding: 20px 0;
+        border: 1px solid #383a47;
+    }   
+}
+
+@media all and (min-width: 481px) and (max-width: 768px){
+    .pay-form-container{
+        padding: 20px 20px;
+    }
+    .pay-form .price img{
+        width: 140px;
+    }
+    .pay-form .payment{
+        padding: 20px 10px;
+    }
+}

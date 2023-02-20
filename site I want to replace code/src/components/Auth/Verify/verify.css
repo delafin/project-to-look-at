@@ -1,0 +1,32 @@
+.email-verified, .verify-email{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.email-verified h3, p, .verify-email h3{
+    font-weight: 400;
+    color: #1d1d1d;
+}
+
+.email-verified h4, .verify-email h4{
+    margin-bottom: 30px;
+}
+
+.verify-email{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 50px 10px;
+    box-sizing: border-box;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px
+}
+
+.email-verified{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px
+}
